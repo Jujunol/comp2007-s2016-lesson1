@@ -9,10 +9,13 @@
     <!-- jQuery -->
     <script src="scripts/jquery-1.9.1.min.js"></script>
 
+    <!-- Bootstrap 3 -->
     <link href="content/bootstrap.min.css" rel="stylesheet" />
     <link href="content/bootstrap-theme.min.css" rel="stylesheet" />
-    <link href="content/font-awesome.css" rel="stylesheet" />
     <script src="scripts/bootstrap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link href="content/font-awesome.css" rel="stylesheet" />
 </head>
 <body>
 
