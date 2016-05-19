@@ -16,7 +16,7 @@ namespace comp2007_s2016_lesson_1
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            fullnameLabel.Text = firstnameText.Text + " " + lastnameText.Text;
+            fullnameLabel.Text = "Hello " + firstnameText.Text + " " + lastnameText.Text + "!";
         }
     }
 }

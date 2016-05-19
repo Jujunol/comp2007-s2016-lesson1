@@ -7,7 +7,7 @@
     <title></title>
 
     <!-- jQuery -->
-    <script src="scripts/jquery-1.9.1.min.js"></script>
+    <script src="scripts/jquery-2.2.3.min.js"></script>
 
     <!-- Bootstrap 3 -->
     <link href="content/bootstrap.min.css" rel="stylesheet" />
@@ -19,13 +19,13 @@
 </head>
 <body>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <a href="#" class="navbar-brand">ASP.NET Web Form</a>
+    <nav class="navbar navbar-default">
+        <a href="#" class="navbar-brand">User Editior</a>
         <div class="container">
             <ul class="nav navbar-nav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Kitty</a></li>
-                <li><a href="#">Cat</a></li>
+                <li><a href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-list fa-lg"></i> List</a></li>
+                <li><a href="#"><i class="fa fa-user fa-lg"></i> My Account</a></li>
             </ul>
         </div>
     </nav>
@@ -36,16 +36,19 @@
                 <h1>User Profile</h1>
                 <form class="form" id="form1" runat="server">
                     <div class="form-group">
+                        <asp:RangeValidator ID="ageValidator" CssClass="alert alert-danger" runat="server" ErrorMessage="Age must be between 10 and 100" MaximumValue="100" MinimumValue="10" Type="Integer" ControlToValidate="ageText"></asp:RangeValidator>
+                    </div>
+                    <div class="form-group">
                         <asp:Label ID="firstnameLabel" Text="Firstname:" runat="server" CssClass="control-label" />
-                        <asp:TextBox ID="firstnameText" runat="server" CssClass="form-control" />
+                        <asp:TextBox ID="firstnameText" runat="server" CssClass="form-control" required="true" />
                     </div>
                     <div class="form-group">
                         <asp:Label ID="lastnameLabel" Text="Lastname:" runat="server" CssClass="control-label" />
-                        <asp:TextBox ID="lastnameText" runat="server" CssClass="form-control" />
+                        <asp:TextBox ID="lastnameText" runat="server" CssClass="form-control" required="true" />
                     </div>
                     <div class="form-group">
                         <asp:Label ID="ageLabel" Text="Age:" runat="server" CssClass="control-label" />
-                        <asp:TextBox ID="ageText" runat="server" CssClass="form-control" />
+                        <asp:TextBox ID="ageText" runat="server" CssClass="form-control" required="true" />
                     </div>
                     <asp:Button Text="Submit" runat="server" ID="submit" CssClass="btn btn-primary" OnClick="submit_Click" />
                     <hr />

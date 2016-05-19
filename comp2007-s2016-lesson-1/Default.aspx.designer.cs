@@ -22,6 +22,15 @@ namespace comp2007_s2016_lesson_1 {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
+        /// ageValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator ageValidator;
+        
+        /// <summary>
         /// firstnameLabel control.
         /// </summary>
         /// <remarks>
